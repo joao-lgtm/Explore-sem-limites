@@ -1,0 +1,245 @@
+:root {
+    --fontStyle: 'Mulish', sans-serif;
+    --titleColor: #B52184;
+    --textColor: #312D64;
+    --backgroundColor: #F9F4FB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fontStyle);
+    background-color: var(--backgroundColor);
+    height: 100vh;
+}
+
+.first_container {
+    margin-bottom: 12.5rem;
+    padding-left: 6.25rem;
+    padding-right: 1.813rem;
+}
+
+.container_logo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imagem-1 {
+    width: 100%;
+    height: 100%;
+}
+
+.container_title {
+    display: flex;
+    flex-direction: column;
+}
+
+.title_content {
+    padding-bottom: 9.375rem;
+    padding-top: 20rem;
+}
+
+
+.title {
+    color: var(--titleColor);
+    font-size: 4rem;
+}
+
+.sub_title {
+    color: var(--textColor);
+    font-size: 2rem;
+}
+
+.arrow_to_down_container {
+    border: #B52184 solid 0.188rem;
+    border-radius: 2.5rem;
+    padding: 0.938rem 0.313rem 0.938rem 0.313rem;
+    width: 1.875rem;
+}
+
+.arrow_to_down {
+    width: 1.813rem;
+    height: 2.813rem;
+}
+
+.second_container {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(-150deg, #302C63, #343193);
+    gap: 1.875rem;
+    padding: 4rem 6.938rem;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.938rem;
+    background-color: var(--backgroundColor);
+    border-radius: 0.625rem;
+    padding: 1.625rem;
+    height: 31.25rem;
+}
+
+.text-area {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.938rem;
+    gap: 0.938rem;
+}
+
+.title_card {
+    color: var(--titleColor);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.text-card {
+    color: var(--textColor);
+    font-size: 1.10rem;
+}
+
+label{
+    color: var(--titleColor);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.third_container{
+    padding: 5.875rem 0  5.938rem  6.813rem;
+    background: url("image\ 11976.svg") no-repeat;
+    background-position: right;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.938rem;
+    width: 33.375rem;
+}
+
+.teste{
+    display: flex;
+    border:1px solid #312D64;
+    border-radius: 10px;
+}
+
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+input{
+    background: transparent;
+    padding: 0.625rem;
+    font-size: 1rem;
+    border: none;
+    height: fit-content;
+    width: 100%;
+}
+
+textarea{
+    background: transparent;
+    border-radius: 0.625rem;
+    border: 0.063 solid #312D64 ;
+    height: 6.25rem;
+}
+
+button{
+    background-color: var(--textColor);
+    width: 150px;
+    color: var(--backgroundColor);
+    padding: 0.625rem;
+    border-radius: 0.625rem;
+}
+
+footer{
+    display: flex;
+    justify-content:center;
+    color: var(--backgroundColor);
+    background: linear-gradient(-150deg, #302C63, #343193);
+    height: 4.875rem;
+    align-items: center;
+}
+
+@media (max-width: 950px) {
+    .first_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+
+    .title_content {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .title {
+        color: var(--titleColor);
+        font-size: 2.5rem;
+    }
+
+    .sub_title {
+        color: var(--textColor);
+        font-size: 1.49rem;
+    }
+
+
+    .container_logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.938rem;
+    }
+
+    .container_title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+
+    .imagem-1 {
+        width: 22.75rem;
+        height: 23.125rem;
+    }
+
+
+    .arrow_to_down_container {
+        margin-top: 2.188rem;
+        margin-bottom: 5.813rem;
+        position: initial;
+    }
+
+    .second_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(-150deg, #302C63, #343193);
+        gap: 1.875rem;
+        padding: 3.25rem;
+    }
+
+    .card {
+        height: fit-content;
+    }
+
+    .third_container{
+        padding: 4.875rem 2.5rem 4.063rem 2.438rem;
+        background: none;
+        background-position: right;
+    }
+
+    form{
+        width: auto;
+    }
+}
